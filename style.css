@@ -1,0 +1,86 @@
+body{
+    background-color: hsl(0, 0%, 32%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+#Calculator{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    max-width:500px;
+    
+
+}
+#display{
+
+    width: calc(100%); /* Adjust width to account for padding */
+    border: none;
+    padding: 20px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+
+  
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1px;
+    padding: 10px;
+
+   
+    
+}
+button{
+    border: none;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 2em;
+}
+#Ops{
+    background-color: rgb(202, 124, 6);
+    transition: background-color 0.1s ease;
+}
+#Ops:hover{
+    background-color: rgb(190, 116, 5);
+}
+#Ops:active{
+    background-color: rgb(255, 162, 0);
+}
+@media screen and  (max-width:600px){ 
+    
+    #Calculator{
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        max-width:400px;
+    }
+    #display{
+
+        width: calc(100%); /* Adjust width to account for padding */
+        border: none;
+        padding: 10px;
+        background-color: rgb(61, 61, 61);
+        color: white;
+        font-size: 1em;
+        text-align: right;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box; /* Include padding in width calculation */
+    
+      
+    }
+    button{
+        border: none;
+        padding: 5px;
+        border-radius: 25px;
+        font-size: 1em;
+    }
+}

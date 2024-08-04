@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+</head>
+<body>
+   <div id="Calculator">
+       
+    <input id="display" readonly>
+    <div id="keys">
+        <button id="Ops" onclick="OpClick('+')">+</button>
+        <button  id="Ops" onclick="OpClick('-')">-</button>
+        <button  id="Ops" onclick="OpClick('*')">*</button>
+        <button  id="Ops" onclick="OpClick('/')">/</button>
+        <button onclick="NumClick('0')">0</button>
+        <button onclick="NumClick('1')">1</button>
+        <button onclick="NumClick('2')">2</button>
+        <button onclick="NumClick('3')">3</button>
+        <button onclick="NumClick('4')">4</button>
+        <button onclick="NumClick('5')">5</button>
+        <button onclick="NumClick('6')">6</button>
+        <button onclick="NumClick('7')">7</button>
+        <button onclick="NumClick('8')">8</button>
+        <button onclick="NumClick('9')">9</button>
+        <button onclick="NumClick('.')">.</button>
+        <button onclick="Reset()">C</button>
+        <button onclick="calculate()">=</button>
+        
+    </div>
+
+
+
+   </div>
+</body>
+<script src="index.js"></script>
+</html>
